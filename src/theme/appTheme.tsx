@@ -1,0 +1,16 @@
+import {StyleSheet} from 'react-native';
+
+export const styles = StyleSheet.create({
+  globalMargin: {
+    marginHorizontal: 20,
+  },
+  title: {
+    fontSize: 30,
+    marginBottom: 10,
+  },
+  avatarImage: {
+    width: 50,
+    height: 50,
+    borderRadius: 100,
+  },
+});
