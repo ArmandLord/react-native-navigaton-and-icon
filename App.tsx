@@ -7,13 +7,16 @@ import {
   TopTabNavigator,
   // StackNavigator
 } from './src/navigator';
+import {AuthProvider} from './src/context';
 
 const App = () => {
   return (
     <NavigationContainer>
       {/* <StackNavigator /> */}
       {/* <TopTabNavigator /> */}
-      <SideMenu />
+      <AuthProvider>
+        <SideMenu />
+      </AuthProvider>
       {/* <BottomTabsNavigator /> */}
     </NavigationContainer>
   );
